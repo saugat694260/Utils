@@ -1,0 +1,47 @@
+.container{
+ text-align: center;
+}
+.image-container{
+ background: transparent;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ }
+.previous ,.next{
+height: 60px;
+width: 60px;
+
+border: none;
+border-radius: 100px;
+background-color: rgb(228, 221, 221);
+background: 100%;
+font-weight: bold;
+font-size: 30px;
+}
+
+ .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .description-container{
+  margin-top: 10px;
+ }
+ .dots{
+  
+ }
+ .dot-Container{
+  display: inline;
+  font-size: 50px;
+ }
+.focus.dot-Container{
+  background-color: white;
+  font-size: 80px;
+}

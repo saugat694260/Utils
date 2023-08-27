@@ -1,0 +1,27 @@
+.main-Container{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.container{
+  background-color: silver;
+}
+.timeDisplay{
+  width: 150px;
+}
+.others{
+
+}
+.countUp{
+
+}
+.countUp,.timeDisplay,.others{
+  width: 150px;
+  padding:0;
+  padding: 3px;
+  margin: 1px;
+  background-color: black;
+  color: lawngreen;;
+}

@@ -1,0 +1,31 @@
+html{
+  background-color: #e4dfdf;
+}
+
+.js-dark-Mode{
+  background-color: #121212;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-N-Nite_Button {
+  background-color: pink;
+  background-color: transparent;
+  border: none;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  background-size:cover;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
+ }
+.day-N-Nite_image{
+  width: 100%;
+  border-radius: 60px;
+    background-size:cover;
+}
+
