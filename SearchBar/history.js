@@ -3,8 +3,12 @@ export let historyContainer = document.querySelector(".history-Container");
 
 //checks whether array is empty or not//not a best way but had to do it
 //main array
-export let history = [
-];
+export let history = JSON.parse(localStorage.getItem('history'));
+
+//save to storage so data will not be gone even after refresh
+export function savetostorage(){
+  localStorage.setItem('history',JSON.stringify(history));//name,data 
+}
 
 //takes input value from "close bar function/input value"
 export function addToHistory(inputValue) {
@@ -24,6 +28,7 @@ export function addToHistory(inputValue) {
   if (!matchingItem && !!inputValue) {
     history.push({ id: RandomNumber(), input: inputValue });
   }
+  savetostorage();
 }
 
 //unique id for id
@@ -78,12 +83,13 @@ export function updateHtml() {
 
     });
   });
+  savetostorage()
 }
 //removes history at once
 export function clearHistory() {
   history = [];
   historyContainer.innerHTML = `Nothing to show`;
-
+  savetostorage();
 }
 //
 
@@ -102,7 +108,7 @@ function removeFromHistory(historyId) {
   });
 
   history = newHistory;
-
+  savetostorage();
 
 }
 

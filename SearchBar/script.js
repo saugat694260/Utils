@@ -1,4 +1,4 @@
-import { addToHistory, updateHtml, historyContainer, clearHistory,history } from "./history.js";
+import { addToHistory, updateHtml, historyContainer, clearHistory,history,savetostorage } from "./history.js";
 
 
 
@@ -79,7 +79,10 @@ function showHistoryContainer() {
     clicked = false
     historyContainer.classList.remove('js-history-Container');
     clearHistoryButton.classList.remove('js-clear-History-Button');
+   
   }
+  updateHtml();
+  savetostorage();
 }
 
 
