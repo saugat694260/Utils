@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--fonts from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+<!--style link-->
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/shared.css">
+
+<!--script link-->
+    <script type="module" src="/scripts/register.js"></script>
+
+
+<title>FORM VALIDATION</title>
+
+</head>
+<body>
+
+<div class="page-main-container">
+
+    <div class="form-main-container">
+        <form class="form">
+            <div class="form-container">
+    
+                <div class="form-first-sub-container">
+                    <input type="text" id="emailOrPhonenumber-js" name="emailOrPhonenumber" placeholder="email Or Phonenumber">
+                    <span id="error-message-emailOrPhonenumber-js"></span>
+                    <input type="text" id="username-js" name="username" placeholder="username">
+                    <span id="error-message-username-js"></span>
+                        <div>
+                            <input type="password" id="password-js" name="password" placeholder="password">
+                            <button class="show-and-hide-password" id="show-and-hide-password-js">show</button>
+                        
+                        </div>
+                    <span id="error-message-password-js"></span>
+                    </div>
+                <div class="form-second-sub-container" id="form-second-sub-container-js">
+                    <label >day:</label>
+                    <select name="age" id="day-js">
+                    </select>
+    
+                    <label >month:</label>
+                    <select name="age" id="month-js">
+                       
+                    </select>
+    
+                    <label>year:</label>
+                    <select name="age" id="year-js">
+                    </select>
+                 </div>
+                 <span id="error-message-age-js"></span>
+                <div class="form-third-sub-container">
+                    <label >male</label>
+                    <input type="radio" name="gender" value="male" id="male-js">
+                    <label>female</label>
+                    <input type="radio" name="gender" value="female" id="female-js">
+                    <label>others</label>
+                    <input type="radio" name="gender" value="others" id="others-js">
+                </div>
+                <span id="error-message-gender-js"></span>
+                <div class="form-fourth-sub-container">
+                     <input id="submit-js" type="submit" name="signup" value="sign up">
+                </div>
+    
+                <div class="form-fifth-sub-container">
+                    <p>already have an account?<a href="">login</a></p>
+                    <p><a href="">forgot password?</a></p>
+                </div>
+    
+            </div>
+    
+        </form>
+    
+    </div>
+    
+    <div class="title-main-container">
+        <div class="title-first-sub-container">
+            <p>fuckbook</p>
+        </div>
+        
+        <div class="title-second-sub-container">
+         <p>enjoy your life</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
